@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hop Uom Mam Cay</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <span class="fs-4">Hộp ươm mầm cây</span></a
+        >
+      </header>
+
+      <!-- plan list -->
+      <div class="container text-center mb-5" id="plan-list">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="shadow px-2 py-2">
+              <img
+                src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                alt="cay non"
+                class="rounded-circle"
+                width="140"
+                height="140"
+              />
+              <h2 class="fw-normal">Plant 1</h2>
+              <p>
+                <a class="btn btn-secondary" href="#item1" onclick="change(1)"
+                  >View details »</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="shadow px-2 py-2">
+              <img
+                src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                alt=""
+                class="rounded-circle"
+                width="140"
+                height="140"
+              />
+              <h2 class="fw-normal">Plant 2</h2>
+              <p>
+                <a class="btn btn-secondary" href="#item2" onclick="change(2)"
+                  >View details »</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="shadow px-2 py-2">
+              <img
+                src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                alt="cay non"
+                class="rounded-circle"
+                width="140"
+                height="140"
+              />
+              <h2 class="fw-normal">Plant 3</h2>
+              <p>
+                <a class="btn btn-secondary" href="#item3" onclick="change(3)"
+                  >View details »</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- detail view -->
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade carousel-dark shadow mb-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            data-bs-interval="1000000"
+            id="item1"
+          >
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#eee"></rect>
+            </svg>
+            <div class="container">
+              <div class="row carousel-caption">
+                <div class="col-4 box">
+                  <h1>Plant 1</h1>
+                  <img
+                    src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                    alt="cay non"
+                    class="rounded-circle mb-3"
+                    width="140"
+                    height="140"
+                  />
+                  <div class="d-grid gap-2">
+                    <a href="#" role="button" class="btn btn-info" id="refresh1"
+                      >Refresh</a
+                    >
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_led"
+                        id="batled_1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-success" for="batled_1"
+                        >Bật LED</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_led"
+                        id="tatled_1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-danger" for="tatled_1"
+                        >Tắt LED</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_quat1"
+                        id="batquat_1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-success" for="batquat_1"
+                        >Bật quạt 1</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_quat1"
+                        id="tatquat_1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-danger" for="tatquat_1"
+                        >Tắt quạt 1</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_quat2"
+                        id="batphunsuong1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-success" for="batphunsuong1"
+                        >Bật quạt 2</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_1_quat2"
+                        id="tatphunsuong1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-danger" for="tatphunsuong1"
+                        >Tắt quạt 2</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 box">
+                  <div class="row row-cols-2 my-5">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong>Nhiệt độ </strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="temp1" class="card-title">
+                            <strong>27 độ C</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>Độ ẩm </strong></div>
+                        <div class="card-body">
+                          <div id="hum_air1" class="card-title">
+                            <strong>90 %</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong>Độ ẩm đất </strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="soil_mois1" class="card-title">
+                            <strong>70 % </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong> Ánh sáng</strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="lux1" class="card-title">
+                            <strong>500 lux </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>CO2 </strong></div>
+                        <div class="card-body">
+                          <div id="co21" class="card-title">
+                            <strong>300 ppm </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000" id="item2">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#eee"></rect>
+            </svg>
+            <div class="container">
+              <div class="row carousel-caption">
+                <div class="col-4 box">
+                  <h1>Plant 2</h1>
+                  <img
+                    src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                    alt="cay non"
+                    class="rounded-circle mb-3"
+                    width="140"
+                    height="140"
+                  />
+                  <div class="d-grid gap-2">
+                    <a
+                      role="button"
+                      class="btn btn-info disabled"
+                      aria-disabled="true"
+                      id="refresh2"
+                      >Refresh</a
+                    >
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_led"
+                        id="batled_2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batled_2"
+                        >Bật LED</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_led"
+                        id="tatled_2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatled_2"
+                        >Tắt LED</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_quat1"
+                        id="batquat_2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batquat_2"
+                        >Bật quạt 1</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_quat1"
+                        id="tatquat_2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatquat_2"
+                        >Tắt quạt 1</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_quat2"
+                        id="batphunsuong2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batphunsuong2"
+                        >Bật quạt 2</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_2_quat2"
+                        id="tatphunsuong2"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatphunsuong2"
+                        >Tắt quạt 2</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 box">
+                  <div class="row row-cols-2 my-5">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong>Nhiệt độ </strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="temp2" class="card-title">
+                            <strong> Không có dữ liệu</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>Độ ẩm </strong></div>
+                        <div class="card-body">
+                          <div id="hum_air2" class="card-title">
+                            <strong>Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong> Độ ẩm đất</strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="soil_mois2" class="card-title">
+                            <strong> Không có dữ liệu</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong> Ánh sáng</strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="lux2" class="card-title">
+                            <strong> Không có dữ liệu</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>CO2 </strong></div>
+                        <div class="card-body">
+                          <div id="co22" class="card-title">
+                            <strong>Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000" id="item3">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#eee"></rect>
+            </svg>
+            <div class="container">
+              <div class="row carousel-caption">
+                <div class="col-4 box">
+                  <h1>Plant 3</h1>
+                  <img
+                    src="https://toplist.vn/images/800px/cay-mit-non-199426.jpg"
+                    alt="cay non"
+                    class="rounded-circle mb-3"
+                    width="140"
+                    height="140"
+                  />
+                  <div class="d-grid gap-2">
+                    <a
+                      role="button"
+                      class="btn btn-info disabled"
+                      aria-disabled="true"
+                      id="refresh3"
+                      >Refresh</a
+                    >
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_led"
+                        id="batled_3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batled_3"
+                        >Bật LED</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_led"
+                        id="tatled_3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatled_3"
+                        >Tắt LED</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_quat1"
+                        id="batquat_3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batquat_3"
+                        >Bật quạt 1</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_quat1"
+                        id="tatquat_3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatquat_3"
+                        >Tắt quạt 1</label
+                      >
+                    </div>
+                    <div class="btn-group" role="group">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_quat2"
+                        id="batphunsuong3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-success" for="batphunsuong3"
+                        >Bật quạt 2</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="cay_3_quat2"
+                        id="tatphunsuong3"
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label class="btn btn-outline-danger" for="tatphunsuong3"
+                        >Tắt quạt 2</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 box">
+                  <div class="row row-cols-2 my-5">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>Nhiệt độ</strong></div>
+                        <div class="card-body">
+                          <div id="temp3" class="card-title">
+                            <strong> Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong>Độ ẩm </strong></div>
+                        <div class="card-body">
+                          <div id="hum_air3" class="card-title">
+                            <strong> Không có dữ liệu</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong>Độ ẩm đất </strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="soil_mois3" class="card-title">
+                            <strong>Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header">
+                          <strong>Ánh sáng </strong>
+                        </div>
+                        <div class="card-body">
+                          <div id="lux3" class="card-title">
+                            <strong> Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><strong> CO2 </strong></div>
+                        <div class="card-body">
+                          <div id="co23" class="card-title">
+                            <strong> Không có dữ liệu </strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--socket  -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      //du lieu
+      const co2s = document.querySelectorAll('[id^="co2"]');
+      const luxs = document.querySelectorAll('[id^="lux"]');
+      const temps = document.querySelectorAll('[id^="temp"]');
+      const hum_airs = document.querySelectorAll('[id^="hum_air"]');
+      const soil_moiss = document.querySelectorAll('[id^="soil_mois"]');
+      const refreshs = document.querySelectorAll('[id^="refresh"]');
+      //nut bam
+      const btn_bat_led = document.querySelectorAll("[id^=batled]");
+      const btn_tat_led = document.querySelectorAll("[id^=tatled]");
+      const btn_bat_quat = document.querySelectorAll("[id^=batquat]");
+      const btn_tat_quat = document.querySelectorAll("[id^=tatquat]");
+      const btn_bat_phunsuong = document.querySelectorAll("[id^=batphunsuong]");
+      const btn_tat_phunsuong = document.querySelectorAll("[id^=tatphunsuong]");
+
+      var socket = io();
+
+      //dung 1 cay thoi cho nhanh, khong thi can phai sua nhieu lam
+      socket.on("message", (data) => {
+        co2s[0].innerText = `${data.CO2} ppm`;
+        luxs[0].innerText = `${data.LIGHT} lux`;
+        soil_moiss[0].innerText = `${data.SOIL} %`;
+        temps[0].innerText = `${data.DHT_TEM} do C`;
+        hum_airs[0].innerText = `${data.DHT_HUM} %`;
+      });
+
+      socket.on("LED_on", (data) => {
+        btn_bat_led[data].checked = true;
+      });
+      socket.on("LED_off", (data) => {
+        btn_tat_led[data].checked = true;
+      });
+      socket.on("QUAT_on", (data) => {
+        btn_bat_quat[data].checked = true;
+      });
+      socket.on("QUAT_off", (data) => {
+        btn_tat_quat[data].checked = true;
+      });
+      socket.on("PHUNSUONG_on", (data) => {
+        btn_bat_phunsuong[data].checked = true;
+      });
+      socket.on("PHUNSUONG_off", (data) => {
+        btn_tat_phunsuong[data].checked = true;
+      });
+
+      //bat led
+      btn_bat_led.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("LED_on", `${index} web`);
+        });
+      });
+      //tat led
+      btn_tat_led.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("LED_off", `${index}`);
+        });
+      });
+      //bat quat
+      btn_bat_quat.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("QUAT_on", `${index}`);
+        });
+      });
+      //tat quat
+      btn_tat_quat.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("QUAT_off", `${index}`);
+        });
+      });
+      //bat phun suong
+      btn_bat_phunsuong.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("PHUNSUONG_on", `${index}`);
+        });
+      });
+      //tat phun suong
+      btn_tat_phunsuong.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          socket.emit("PHUNSUONG_off", `${index}`);
+        });
+      });
+      //refresh
+      refreshs.forEach((el, index) =>
+        el.addEventListener("click", () => {
+          socket.emit(`UPDATE`, `${index}`);
+        })
+      );
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const carousels = document.querySelectorAll(".carousel-item");
+      // carousels.forEach((carousel) => {
+      //   carousel.classList.add("smooth-transition");
+      // })
+      function change(num) {
+        carousels.forEach((carousel) => {
+          carousel.classList.remove("active");
+        });
+        carousels[num - 1].classList.add("active");
+      }
+    </script>
+  </body>
+</html>

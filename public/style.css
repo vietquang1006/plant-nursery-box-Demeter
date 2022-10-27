@@ -1,0 +1,47 @@
+body {
+    min-width: 512px;
+    font-weight: 600;
+}
+
+
+.carousel-item {
+    height: 32rem;
+    /* min-height: 32rem; */
+    /* max-height: 37rem; */
+}
+
+.box {
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+    
+
+.carousel button {
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: -5% !important;
+}
+.carousel-control-next {
+    right: -5% !important;
+}
+
+.carousel-caption {
+    left: 5% !important;
+    right: 5% !important;
+    top: 5%;
+}
+.carousel-caption * {
+    font-weight: 600 !important; 
+}
+/* 
+#myCarousel {
+    height: 700px;
+} */
+
+@media (max-width: 500px) {
+    .carousel-item {
+        height: 37rem;
+    }
+}
